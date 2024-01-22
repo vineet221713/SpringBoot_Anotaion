@@ -179,11 +179,11 @@
 - @PostMapping
 - @PutMapping
 - @RequestBody
-- @Services
-- @Repository
-- @EnableAutoConfigurations
-- @EnableWebMvc
-- @PropertySource
+- @Services // for service layer
+- @Repository// for Data Access layer
+- @EnableAutoConfigurations(exclude = {DataSource.class ,WebMvcAutoConfigartion.class})// enable(on the basic of pom.xml) and disable 
+- @EnableWebMvc //
+- @PropertySource // 
 - @Value
 - @ConfigureProperties
 - @ConditionalOnProperty
